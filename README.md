@@ -1,4 +1,4 @@
-![Enhanced Scheduled Sampling framework](assets/ess_overview.png)
+![Enhanced Scheduled Sampling framework](assets/ESS.png)
 
 # Enhanced Scheduled Sampling for CSTR control
 
