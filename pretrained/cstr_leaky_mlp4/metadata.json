@@ -1,0 +1,34 @@
+{
+  "description": "User-supplied paper LeakyMLP4 checkpoint for CSTR evaluation",
+  "weights_file": "weights.h5",
+  "weights_sha256": "927d4481344ff383bd466a4c06b731da1c3701b3020eb439bebc15346bd54101",
+  "original_weights_filename": "model_weights_CSTR_best_model_LeakyMLP4.h5",
+  "original_matlab_filename": "ANN_CSTR_best_model_LeakyMLP4.mat",
+  "checkpoint_epoch": null,
+  "architecture": "LeakyMLP4",
+  "layer_widths": [4, 256, 128, 64, 1],
+  "negative_slope": 0.01,
+  "input_features": ["current_error", "sliding_error_sum", "previous_applied_action", "accumulated_error"],
+  "scaler_provenance": "Original journal workspace Results/Scalers/*CSRT1_4i*.csv; matched full-training-data normalization to numerical precision.",
+  "preprocessing_provenance": "Original CSTR training configuration; the supplied weight files do not embed these settings.",
+  "evaluation_config": {
+    "architecture": "LeakyMLP4",
+    "data_dir": "data/cstr",
+    "training_file": "training_reference.mat",
+    "validation_file": "validation_reference.mat",
+    "training_excitation": "training_disturbances.mat",
+    "validation_excitation": "validation_disturbances.mat",
+    "pid_file": "pid_parameters.mat",
+    "dataset_fraction": 1.0,
+    "sample_time_min": 0.01,
+    "error_window": 300,
+    "error_retention": 1.0
+  },
+  "paper_reference": {
+    "title": "Mitigating Exposure Bias for Reliable ANN-Based Control: The Enhanced Scheduled Sampling Framework",
+    "table": "II",
+    "controller": "ESS (308e), LeakyMLP4",
+    "training_iae": 345,
+    "validation_iae": 272
+  }
+}
