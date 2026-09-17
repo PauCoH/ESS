@@ -1,3 +1,5 @@
+![Enhanced Scheduled Sampling framework](assets/ess_overview.png)
+
 # Enhanced Scheduled Sampling for CSTR control
 
 Code and data for the CSTR example in *Mitigating Exposure Bias for Reliable
